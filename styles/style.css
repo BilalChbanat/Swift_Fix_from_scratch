@@ -51,7 +51,7 @@ h1 h2 {
 .image_main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .image_main img {
@@ -102,7 +102,7 @@ h1 h2 {
 }
 
 
-.h1_main {
+.head_main {
     font-family: 'Playfair Display', serif;
     width: 100%;
     font-size: 4.5em;
@@ -136,9 +136,8 @@ h1 h2 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 21em;
-    margin-left: 3.5em;
     height: 6em;
     background-color: #ffffff;
     border: none;
@@ -146,6 +145,10 @@ h1 h2 {
     box-shadow: 5px 5px 25px rgba(1 1 1 / 20%);
 }
 
+.main-card span {
+    color: #737373;
+    font-size: 16px;
+}
 
 .main-btn:hover {
     background-color: #045f94;
@@ -154,7 +157,7 @@ h1 h2 {
 
 
 .sou_main {
-    margin-top: -10em;
+    margin-top: -5em;
     width: 38%;
     display: inline-block;
 }
@@ -165,7 +168,8 @@ h1 h2 {
 }
 
 .container-sou-image {
-    width: 21em;
+    width: 20em;
+    padding-bottom: 23px;
 }
 
 .container-sou-image img {
@@ -196,7 +200,7 @@ h1 h2 {
     width: 40%;
 }
 
-.consulting_text h1 {
+.consulting_text h2 {
     font-family: 'Playfair Display', serif;
     font-size: 3.5em;
     font-weight: 900;
@@ -213,9 +217,10 @@ h1 h2 {
 /* ////////line-height///////// */
 
 .cards {
-    padding: 0 0 16px 16px;
+    padding: 0 16px 16px 16px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     width: 15em;
     margin: 1em;
     height: 18em;
@@ -223,15 +228,13 @@ h1 h2 {
     border: none;
     border-radius: 1.5em;
     box-shadow: 5px 5px 25px rgba(1 1 1 / 20%);
+    cursor: pointer;
 }
 
 
-.cards h1 {
+.cards h2 {
     font-family: 'Playfair Display', serif;
-    display: flex;
-
     letter-spacing: 1.5px;
-
 }
 
 .icon {
@@ -240,6 +243,9 @@ h1 h2 {
 }
 
 .some_count {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     height: 60vh;
     background-color: #094B72;
     background-image: url(../svg/patterne.svg);
@@ -252,21 +258,21 @@ h1 h2 {
     padding-top: 16px;
 }
 
-.titles h1 {
+.titles h2 {
     font-family: 'Playfair Display', serif;
     color: #ffffff;
-    font-size: 3em;
+    font-size: 3.8em;
 }
 
-.titles p {
+.titles span {
     color: #ffffff;
-    padding-top: 1em;
+    padding-top: 25px;
 }
 
 .numbers {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 2.2em;
+    padding-top: 10pxs;
 }
 
 .clients {
@@ -275,12 +281,12 @@ h1 h2 {
     text-align: center;
 }
 
-.clients h1 {
+.clients h3 {
     font-size: 5em;
     color: #ffffff;
 }
 
-.clients p {
+.clients span {
     font-size: 22px;
     color: #ffffff;
 }
@@ -299,19 +305,18 @@ h1 h2 {
 
 .client_title {
     font-family: 'Playfair Display', serif;
-    padding: 0.5em;
     font-size: 4em;
+    padding: 40px;
 }
 
 .clients_cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .client_text {
     display: flex;
     flex-direction: column;
-    text-align: center;
     padding-left: 1em;
     padding-right: 1em;
     width: 31em;
@@ -321,6 +326,7 @@ h1 h2 {
     border: none;
     border-radius: 1.5em;
     box-shadow: 5px 5px 25px rgba(1 1 1 / 20%);
+    cursor: pointer;
 }
 
 .client_text p {
@@ -328,9 +334,16 @@ h1 h2 {
     line-height: 25px;
 }
 
-.client_text h1 {
+.client_text h3 {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
+    font-size: 35px;
+    padding: 26px;
+}
+
+.client_info h4 {
+    font-size: 29px;
+    margin: 0.67em 0;
 }
 
 .client_who {
@@ -349,24 +362,30 @@ h1 h2 {
     width: 1.5em;
     height: 1.5em;
     background-color: rgb(255, 255, 255);
-    margin-left: 16em;
-    margin-top: -2em;
     transform: rotate(44deg);
+    margin-top: -28px;
+    cursor: pointer;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .complex_questions {
     padding: 100px 150px;
 }
 
-.complex_questions h1 {
+.complex_questions h2 {
     font-family: 'Playfair Display', serif;
     font-size: 4em;
     padding-bottom: 0.5em;
 }
 
 .complex_questions p {
-    padding-left: 2em;
     width: 32em;
+    font-size: 25px;
     padding-bottom: 0.5em;
 }
 
@@ -389,7 +408,7 @@ footer {
     height: 3em;
 }
 
-.logo_and_name h1 {
+.logo_and_name h2 {
     font-family: 'Playfair Display', serif;
     padding-top: 8px;
     padding-left: 10px;
@@ -416,9 +435,10 @@ ul li a:hover {
     color: #9a94f1;
 }
 
-.product h2 {
+.product h3 {
     color: #ffffff;
     margin-bottom: 25px;
+    font-size: 20px;
 }
 
 .f-sub {
@@ -439,6 +459,7 @@ ul li a:hover {
 .about_home {
     padding-top: 76px;
     display: flex;
+    justify-content: center;
     width: 95vw;
 }
 
@@ -462,18 +483,22 @@ ul li a:hover {
     letter-spacing: 2px;
 }
 
-
-.say-client {
-    padding: 50px;
-    text-align: center;
-    height: 100vh;
+.nav-items {
+    display: flex;
+    align-items: center;
 }
 
-.say-client h1 {
+.say-client {
+    padding: 30px;
+    text-align: center;
+    height: 92vh;
+}
+
+.say-client h2 {
     font-family: 'Playfair Display', serif;
     color: #094B72;
     font-size: 42px;
-    padding: 30px 0 50px 0;
+    padding: 20px;
 }
 
 .name {
@@ -482,8 +507,8 @@ ul li a:hover {
     padding: 16px;
 }
 
-.name h2 {
-
+.name h3 {
+    font-size: 20px;
     padding-left: 8px;
 }
 
@@ -499,6 +524,7 @@ ul li a:hover {
     border-radius: 10px;
     box-shadow: 5px 5px 25px rgba(1 1 1 / 20%);
     margin: 20px;
+    cursor: pointer;
 }
 
 .say_card {
@@ -543,12 +569,12 @@ ul li a:hover {
     padding-top: 76px;
 }
 
-.h1_contact {
+.head_contact {
 
     margin-top: 10px;
 }
 
-.h1_contact h1 {
+.head_contact h1 {
     font-family: 'Playfair Display', serif;
     font-size: 45px;
     color: #094B72;
@@ -558,7 +584,6 @@ ul li a:hover {
 .contact_contair {
     padding-top: 30px;
     display: flex;
-    width: 95vw;
 }
 
 .text_ {
@@ -606,7 +631,7 @@ ul li a:hover {
     padding: 0;
 }
 
-.contact-in h1 {
+.contact-in h2 {
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     color: #fff;
@@ -615,13 +640,13 @@ ul li a:hover {
     margin-bottom: 20px;
 }
 
-.contact-in h2 {
+.contact-in h3 {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 15px;
 }
 
-.contact-in h2 i {
+.contact-in h3 i {
     font-size: 16px;
     width: 40px;
     height: 40px;
@@ -750,6 +775,7 @@ ul li a:hover {
 
 .serv_pic img {
     width: 100%;
+
 }
 
 .titles_services {
@@ -767,7 +793,6 @@ ul li a:hover {
 
 .titles_services p {
     color: #ffffff;
-    padding-top: 1em;
 }
 
 .serv_section {
@@ -779,5 +804,345 @@ ul li a:hover {
     height: 40vh;
     background-color: #094B72;
     background-image: url(../svg/patterne.svg);
+
+}
+
+
+
+@media only screen and (max-width:480px) {
+    .contact-in:nth-child(1) {
+        flex: 50%;
+    }
+
+    .contact-in:nth-child(2) {
+        flex: 50%;
+    }
+
+    .contact-in:nth-child(3) {
+        flex: 100%;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .contact-in:nth-child(1) {
+        flex: 50%;
+    }
+
+    .contact-in:nth-child(2) {
+        flex: 50%;
+    }
+
+    .contact-in:nth-child(3) {
+        flex: 100%;
+    }
+
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 12px 20px;
+    }
+
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.7em;
+    }
+
+    section {
+        padding: 78px 19px;
+    }
+
+    .f-above {
+        padding: 30px 0 0 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product h3 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    footer {
+        padding: 0 15px 0 15px;
+        margin: 0;
+        height: 35vh;
+    }
+
+    .s-p {
+        padding: 0 8px 0 8px;
+        margin: 0;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .div-p_s {
+        margin: 0;
+    }
+
+    .contactus-div {
+        padding: 25px 0 0 0;
+    }
+
+    .contact_contair {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        background-color: #094B72;
+        width: 100%;
+    }
+
+    .text_ {
+        font-size: 20px;
+        color: #fff;
+        width: 100%;
+    }
+
+    .text_ p {
+        font-size: 20px;
+        color: #fff;
+        margin: 20px;
+    }
+
+    .image_c {
+        display: none;
+    }
+
+    .image_c img {
+        display: none;
+    }
+
+    .logo_and_SwiftFix {
+        display: none;
+    }
+
+    .logo_and_name {
+        display: none;
+    }
+
+    .image_main {
+        display: none;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main_home {
+        padding: 55px 0 0 0;
+        height: 65vh;
+    }
+
+    .head_main {
+        font-size: 40px;
+    }
+
+    .info_text_main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+
+    .info_text_main a {
+        width: 130px;
+    }
+
+    .sou_main {
+        width: 100%;
+        padding: 20px 0 0 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-sou-image {
+        padding: 0;
+        margin: 0;
+    }
+
+    .help {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .consulting_text {
+        width: 220px;
+    }
+
+    .consulting_text h2 {
+        font-size: 30px;
+        width: 220px;
+    }
+
+    .some_count {
+        padding: 0;
+    }
+
+    .clients h3 {
+        font-size: 45px;
+    }
+
+    .clients span {
+        font-size: 15px;
+    }
+
+    .numbers {
+        flex-direction: column;
+    }
+
+    .vertical_line {
+        align-self: center;
+        width: 150px;
+        margin: 20px 0 20px 0;
+    }
+
+    .clients_testimonial {
+        padding: 25px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .client_text h3 {
+        font-size: 25px;
+        padding: 15px 0 0 0;
+    }
+
+    .client_text p {
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+
+    .clients_testimonial h2 {
+        font-size: 45px;
+        padding: 0;
+    }
+
+    .clients_cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .complex_questions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px;
+        height: 40vh;
+    }
+
+    .complex_questions h2 {
+        padding: 0;
+    }
+
+    .complex_questions p {
+        height: 20px;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .titles_services {
+        margin: 0;
+        padding: 0;
+    }
+
+    .titles_services p {
+        padding: 20px 0 20px 0;
+    }
+
+    .titles_services h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .consulting_text p {
+        line-height: 30px;
+    }
+
+    .consulting_text {
+        padding: 0;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .about_home {
+        padding: 25px 10px 0 10px;
+        margin: 0;
+        width: 100vw;
+    }
+
+    .text_about p {
+        font-size: 20px;
+    }
+
+    .text_about {
+        width: 100%;
+    }
+
+    .say_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .say-client {
+        height: 100vh;
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .card_say {
+        height: 19vh;
+    }
+
+    .card_say:nth-child(3) {
+        display: none;
+    }
+
+    .card_say:nth-child(4) {
+        display: none;
+    }
+
+    .card_say:nth-child(5) {
+        display: none;
+    }
+
+}
+
+
+
+
+@media (max-width: 641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .f-above {
+        padding: 30px 0 0 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
 
 }
