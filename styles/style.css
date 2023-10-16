@@ -55,11 +55,12 @@ h1 h2 {
 }
 
 .image_main img {
-    height: 70vh;
+    height: 756px;
 }
 
 .prologo img {
     width: 50px;
+    height: auto;
 }
 
 .logo_and_SwiftFix {
@@ -172,7 +173,8 @@ h1 h2 {
 }
 
 .container-sou-image img {
-    width: 8em;
+    width: 128px;
+    height: auto;
     margin: 0.5em;
 }
 
@@ -239,6 +241,11 @@ h1 h2 {
 .icon {
     color: #3d619e;
     padding: 1em;
+}
+
+.icon img {
+    width: auto;
+    height: auto;
 }
 
 .some_count {
@@ -403,8 +410,8 @@ footer {
 }
 
 .logo_and_name img {
-    width: 3em;
-    height: 3em;
+    width: 48px;
+    height: 48px;
 }
 
 .logo_and_name h2 {
