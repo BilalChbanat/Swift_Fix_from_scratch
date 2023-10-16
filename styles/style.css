@@ -409,10 +409,7 @@ footer {
     display: flex;
 }
 
-.logo_and_name img {
-    width: 48px;
-    height: 48px;
-}
+
 
 .logo_and_name h2 {
     font-family: 'Playfair Display', serif;
