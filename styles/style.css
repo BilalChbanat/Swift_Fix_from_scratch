@@ -157,7 +157,6 @@ h1 h2 {
 
 
 .sou_main {
-    margin-top: -5em;
     width: 38%;
     display: inline-block;
 }
@@ -183,7 +182,7 @@ h1 h2 {
     height: 100vh;
     margin-top: -6.5em;
     background-color: #edf4ff;
-    padding: 5em 150px 8.5em 150px;
+    padding: 1em 150px 8.5em 150px;
 }
 
 .container_div_card {
@@ -300,7 +299,7 @@ h1 h2 {
     flex-direction: column;
     text-align: center;
     background-color: #edf4ff;
-    height: 77vh;
+    height: 86vh;
 }
 
 .client_title {
@@ -489,9 +488,9 @@ ul li a:hover {
 }
 
 .say-client {
-    padding: 30px;
+    padding: 0 30px 30px 30px;
     text-align: center;
-    height: 92vh;
+    height: 99vh;
 }
 
 .say-client h2 {
@@ -801,7 +800,7 @@ ul li a:hover {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    height: 40vh;
+    height: 49vh;
     background-color: #094B72;
     background-image: url(../svg/patterne.svg);
 
