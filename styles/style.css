@@ -456,6 +456,11 @@ ul li a:hover {
     color: #ffffff;
 }
 
+.f-sub-sub img {
+    width: auto;
+    height: auto;
+}
+
 
 
 /* ///////////////////////////////////about us page//////////////////////////////////// */
@@ -622,8 +627,7 @@ ul li a:hover {
 .contact-in:nth-child(1) {
     flex: 30%;
     background: url(../images/contact_formule.webp);
-    width: auto;
-    height: auto;
+    background-size: auto;
     color: #fff;
 }
 
@@ -781,6 +785,7 @@ ul li a:hover {
 
 .serv_pic img {
     width: 100%;
+    height: auto;
 
 }
 
