@@ -60,7 +60,7 @@ h1 h2 {
 
 .prologo img {
     width: 50px;
-    height: auto;
+    height: 50px;
 }
 
 .logo_and_SwiftFix {
@@ -568,7 +568,7 @@ ul li a:hover {
 
 .image_c img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .contact_text {
@@ -627,7 +627,7 @@ ul li a:hover {
 .contact-in:nth-child(1) {
     flex: 30%;
     background: url(../images/contact_formule.webp);
-    background-size: auto;
+    background-size: 100%;
     color: #fff;
 }
 
