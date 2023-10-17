@@ -620,7 +620,7 @@ ul li a:hover {
 
 .contact-in:nth-child(1) {
     flex: 30%;
-    background: url(../images/contact_formule.png);
+    background: url(../images/contact_formule.webp);
     color: #fff;
 }
 
