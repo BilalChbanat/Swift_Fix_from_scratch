@@ -563,6 +563,7 @@ ul li a:hover {
 
 .image_c img {
     width: 100%;
+    height: auto;
 }
 
 .contact_text {
@@ -621,6 +622,8 @@ ul li a:hover {
 .contact-in:nth-child(1) {
     flex: 30%;
     background: url(../images/contact_formule.webp);
+    width: auto;
+    height: auto;
     color: #fff;
 }
 
