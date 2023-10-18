@@ -306,7 +306,7 @@ h1 h2 {
     flex-direction: column;
     text-align: center;
     background-color: #edf4ff;
-    height: 75vh;
+    height: 85vh;
 }
 
 .client_title {
@@ -867,6 +867,10 @@ ul li a:hover {
         justify-content: space-between;
     }
 
+    .name {
+        padding-bottom: 0;
+    }
+
     .navigation a {
         padding-left: 10px;
     }
@@ -961,7 +965,7 @@ ul li a:hover {
 
     .main_home {
         padding: 55px 0 0 0;
-        height: 80vh;
+        height: 85vh;
     }
 
     .head_main {
@@ -999,7 +1003,6 @@ ul li a:hover {
     .help {
         margin: 0;
         padding: 0;
-        height: 82vh;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -1027,7 +1030,7 @@ ul li a:hover {
 
     .some_count {
         padding: 0;
-        height: 60vh;
+        height: 85vh;
     }
 
     .clients h3 {
@@ -1052,7 +1055,7 @@ ul li a:hover {
         padding: 25px 0 0 0;
         display: flex;
         flex-direction: column;
-        height: 75vh;
+        height: 85vh;
     }
 
 
@@ -1136,6 +1139,21 @@ ul li a:hover {
     .titles_services h1 {
         margin: 0;
         padding: 0;
+        font-size: 25px;
+    }
+
+    .serv_section {
+        padding: 10px;
+        height: auto;
+    }
+
+
+    .serv_section a {
+        margin-top: 5px;
+    }
+
+    .serv_section {
+        padding: 10px;
     }
 
     .consulting_text p {
@@ -1165,6 +1183,7 @@ ul li a:hover {
     }
 
     .say_card {
+        height: 65vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1358,7 +1377,6 @@ ul li a:hover {
         margin: 0;
         padding: 0;
         display: flex;
-        height: 80vh;
         flex-direction: column;
         text-align: center;
         align-items: center;
@@ -1398,7 +1416,7 @@ ul li a:hover {
         padding: 25px 0 0 0;
         display: flex;
         flex-direction: column;
-        height: 75vh;
+        height: 88vh;
     }
 
 
@@ -1510,6 +1528,7 @@ ul li a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 12px;
     }
 
     .say-client {
@@ -1520,7 +1539,11 @@ ul li a:hover {
 
 
     .card_say {
-        height: 19vh;
+        height: 130px;
+    }
+
+    .name {
+        padding-bottom: 5px;
     }
 
     .card_say:nth-child(3) {
@@ -1555,5 +1578,19 @@ ul li a:hover {
 
     .consulting_text p {
         padding-right: 26px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:992) {
+    .card_say:nth-child(3) {
+        display: block;
+    }
+
+    .card_say:nth-child(4) {
+        display: block;
+    }
+
+    .card_say:nth-child(5) {
+        display: block;
     }
 }
