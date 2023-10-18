@@ -306,7 +306,7 @@ h1 h2 {
     flex-direction: column;
     text-align: center;
     background-color: #edf4ff;
-    height: 86vh;
+    height: 75vh;
 }
 
 .client_title {
@@ -338,6 +338,7 @@ h1 h2 {
 .client_text p {
     letter-spacing: 1.5px;
     line-height: 25px;
+    padding: 0 3px;
 }
 
 .client_text h3 {
@@ -849,11 +850,22 @@ ul li a:hover {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     header {
         padding: 12px 20px;
     }
 
+    body {
+        font-size: 12px;
+    }
+
+    .f-above {
+        padding: 30px 0 0 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
     .navigation a {
         padding-left: 10px;
@@ -987,11 +999,12 @@ ul li a:hover {
     .help {
         margin: 0;
         padding: 0;
-        margin-top: 105px;
+        height: 82vh;
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
+        justify-content: space-evenly;
     }
 
     .titles h2 {
@@ -1014,7 +1027,7 @@ ul li a:hover {
 
     .some_count {
         padding: 0;
-        height: 85vh;
+        height: 60vh;
     }
 
     .clients h3 {
@@ -1039,7 +1052,7 @@ ul li a:hover {
         padding: 25px 0 0 0;
         display: flex;
         flex-direction: column;
-        height: 110vh;
+        height: 75vh;
     }
 
 
@@ -1061,7 +1074,7 @@ ul li a:hover {
     }
 
     .clients_testimonial h2 {
-        font-size: 45px;
+        font-size: 30px;
         padding: 0;
     }
 
@@ -1079,9 +1092,25 @@ ul li a:hover {
         align-items: center;
     }
 
+    .client_info h4 {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .client_info span {
+        font-size: 10px;
+    }
+
+    .client_photo img {
+        width: 40px;
+        height: 40px;
+
+    }
+
     .complex_questions a {
         width: 142px;
         margin-bottom: 10px;
+        margin-top: 0;
     }
 
     .complex_questions h2 {
@@ -1091,7 +1120,7 @@ ul li a:hover {
 
     .complex_questions p {
         height: 100px;
-        font-size: 20px;
+        font-size: 15px;
         width: 100%;
     }
 
@@ -1166,10 +1195,11 @@ ul li a:hover {
 
 }
 
+@media (min-width: 600px) and (max-width: 991px) {
+    header {
+        padding: 12px 20px;
+    }
 
-
-
-@media (max-width: 641px) {
     body {
         font-size: 12px;
     }
@@ -1183,4 +1213,347 @@ ul li a:hover {
     }
 
 
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.7em;
+    }
+
+    section {
+        padding: 78px 19px;
+    }
+
+    .f-above {
+        padding: 30px 0 0 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product h3 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    footer {
+        padding: 0 15px 0 15px;
+        margin: 0;
+        height: 35vh;
+    }
+
+    .s-p {
+        padding: 0 8px 0 8px;
+        margin: 0;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .div-p_s {
+        margin: 0;
+    }
+
+    .contactus-div {
+        padding: 25px 0 0 0;
+    }
+
+    .contact_contair {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        background-color: #094B72;
+        width: 100%;
+    }
+
+    .text_ {
+        font-size: 20px;
+        color: #fff;
+        width: 100%;
+    }
+
+    .text_ p {
+        font-size: 20px;
+        color: #fff;
+        margin: 20px;
+    }
+
+    .image_c {
+        display: none;
+    }
+
+    .image_c img {
+        display: none;
+    }
+
+    .logo_and_SwiftFix {
+        display: none;
+    }
+
+    .logo_and_name {
+        display: none;
+    }
+
+    .image_main {
+        display: none;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main_home {
+        padding: 55px 0 0 0;
+    }
+
+    .head_main {
+        font-size: 40px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .f-above {
+        padding: 30px 0 0 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .info_text_main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+
+    .info_text_main a {
+        width: 140px;
+    }
+
+    .sou_main {
+        width: 100%;
+        padding: 20px 0 0 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-sou-image {
+        padding: 0;
+        margin: 0;
+        width: 300px;
+        padding-bottom: 10px;
+    }
+
+    .help {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 80vh;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .titles h2 {
+        font-size: 32px;
+    }
+
+    .consulting_text {
+        width: 220px;
+    }
+
+    .consulting_text h2 {
+        font-size: 25px;
+    }
+
+    .cards {
+        margin: 10px 20px;
+        width: 220px;
+    }
+
+    .some_count {
+        padding: 0;
+        height: 30vh;
+    }
+
+    .clients h3 {
+        font-size: 45px;
+    }
+
+    .clients span {
+        font-size: 15px;
+    }
+
+    .clients_testimonial {
+        padding: 25px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        height: 75vh;
+    }
+
+
+
+    .client_text {
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .client_text h3 {
+        font-size: 25px;
+        padding: 15px 0 0 0;
+    }
+
+    .client_text p {
+        padding-top: 10px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+
+    .clients_testimonial h2 {
+        font-size: 30px;
+        padding: 0;
+    }
+
+    .clients_cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .complex_questions {
+        /* margin-top: 100px; */
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .client_info h4 {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+
+    .client_photo img {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .complex_questions a {
+        width: 142px;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    .complex_questions h2 {
+        padding: 15px 0;
+        font-size: 30px;
+    }
+
+    .complex_questions p {
+        height: 100px;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .titles_services {
+        margin: 0;
+        padding: 0;
+    }
+
+    .titles_services p {
+        padding: 20px 0 20px 0;
+    }
+
+    .titles_services h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .consulting_text p {
+        line-height: 20px;
+    }
+
+    .consulting_text {
+        padding: 0;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .about_home {
+        padding: 25px 10px 0 10px;
+        margin: 0;
+        width: 100vw;
+    }
+
+    .text_about p {
+        font-size: 20px;
+    }
+
+    .text_about {
+        width: 100%;
+    }
+
+    .say_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .say-client {
+        height: 100vh;
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .card_say {
+        height: 19vh;
+    }
+
+    .card_say:nth-child(3) {
+        display: none;
+    }
+
+    .card_say:nth-child(4) {
+        display: none;
+    }
+
+    .card_say:nth-child(5) {
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 991px) {
+    .client_text h3 {
+        font-size: 28px;
+    }
+
+    .image_main img {
+        width: 495px;
+        height: auto;
+    }
+
+    .client_text {
+        margin: 0;
+        padding: 0;
+    }
+
+    .consulting_text p {
+        padding-right: 26px;
+    }
 }
