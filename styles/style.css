@@ -39,6 +39,41 @@ h1 h2 {
     padding-left: 30px;
 }
 
+.hamburger_icon {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    appearance: none;
+}
+
+.hamburger_icon .bar,
+.hamburger_icon::after,
+.hamburger_icon::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #3d619e;
+    margin-top: 6px;
+    margin-right: 2px;
+    transition: 0.4s;
+}
+
+.hamburger_icon.is-active::before {
+    transform: rotate(45deg) translate(0px, 14px);
+}
+
+.hamburger_icon.is-active::after {
+    transform: rotate(-45deg) translate(2px, -16px);
+}
+
+.hamburger_icon.is-active .bar {
+    opacity: 0;
+}
 
 .navigation a:hover {
     color: #7f17bb;
@@ -819,6 +854,34 @@ ul li a:hover {
 
 }
 
+.mobile_navigation {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    background-color: #094B72;
+    margin-top: 50px;
+}
+
+.mobile_navigation.is-active {
+    left: 0;
+}
+
+.mobile_navigation a {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 12px;
+    background-color: #3d619e;
+    width: 200px;
+    font-weight: 700;
+}
 
 
 @media screen and (max-width:480px) {
@@ -867,8 +930,14 @@ ul li a:hover {
         justify-content: space-between;
     }
 
+
+
     .name {
         padding-bottom: 0;
+    }
+
+    .nav-items {
+        display: none;
     }
 
     .navigation a {
@@ -945,9 +1014,6 @@ ul li a:hover {
         display: none;
     }
 
-    .logo_and_SwiftFix {
-        display: none;
-    }
 
     .logo_and_name {
         display: none;
@@ -1231,6 +1297,9 @@ ul li a:hover {
         justify-content: space-between;
     }
 
+    .hamburger_icon {
+        display: none;
+    }
 
     .navigation a {
         padding-left: 10px;
@@ -1306,9 +1375,6 @@ ul li a:hover {
         display: none;
     }
 
-    .logo_and_SwiftFix {
-        display: none;
-    }
 
     .logo_and_name {
         display: none;
@@ -1578,6 +1644,10 @@ ul li a:hover {
 
     .consulting_text p {
         padding-right: 26px;
+    }
+
+    .hamburger_icon {
+        display: none;
     }
 }
 
