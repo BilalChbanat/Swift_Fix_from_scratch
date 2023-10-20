@@ -34,15 +34,21 @@
                     <a href="contact.html">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="logo">Testimonials</a>
+                    <a id="drop_down_menu" onclick="drop_down()">Services <img class="image_arrow"
+                            src="images/arrow_down.webp" alt="menu"></a>
+                    <ul class="ul-drop-down-items">
+                        <li class="tringle_clips"></li>
+                        <li class="drop-down-item">maintenance</li>
+                        <li class="drop-down-item">plumber</li>
+                        <li class="drop-down-item">electrical</li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="about.html" class="logo">About</a>
 
                 </li>
                 <li class="nav-item">
-                    <a href="services.html">Services</a>
-
+                    <a href="#" class="logo">Testimonials</a>
                 </li>
                 <li class="nav-item">
                     <button class="search-button">
@@ -50,7 +56,7 @@
                     </button>
                 </li>
             </ul>
-            <button class="hamburger_icon" onclick="show_dropdown_menu_()">
+            <button class="hamburger_icon" onclick="hamburger()">
                 <div class="bar">.</div>
             </button>
         </nav>
@@ -73,13 +79,18 @@
                 <a href="services.html">Services</a>
 
             </li>
+            <li class="nav-item">
+                <button class="search-button" style="background-color: #ffffff; margin-left: 0;">
+                    <i class="fas fa-sharp fa-regular fa-magnifying-glass">.</i>
+                </button>
+            </li>
 
         </ul>
     </div>
-    <div class="search-bar">
+    <!-- <div class="search-bar">
 
         <input type="text" placeholder="Write what are you loking for">
-    </div>
+    </div> -->
 
     <section class="main_home">
         <div class="main-container">

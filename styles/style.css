@@ -37,6 +37,7 @@ h1 h2 {
     font-size: 1.1em;
     font-weight: 500;
     padding-left: 30px;
+    cursor: pointer;
 }
 
 .hamburger_icon {
@@ -109,6 +110,7 @@ h1 h2 {
     color: #094B72;
     font-weight: 500;
 }
+
 
 .search-button {
     margin-left: 1em;
@@ -250,7 +252,53 @@ h1 h2 {
     width: 18em;
 }
 
-/* ////////line-height///////// */
+.ul-drop-down-items {
+    position: absolute;
+    padding: 10px;
+    background-color: rgb(182, 209, 250);
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 133px;
+    border: none;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.ul-drop-down-items.is-active {
+    visibility: visible;
+}
+
+.drop-down-item {
+    padding: 10px;
+    color: #000;
+    padding-left: 4px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-item img {
+    width: 15px;
+    height: 15px;
+    color: #3d619e;
+}
+
+.tringle_clips {
+    width: 83px;
+    height: 50px;
+    clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+    background-color: rgb(182, 209, 250);
+    margin-top: -47px;
+    text-align: center;
+}
+
+.drop-down-item:hover {
+    padding: 10px;
+    background-color: rgb(215, 228, 250);
+}
 
 .cards {
     padding: 0 16px 16px 16px;
@@ -468,6 +516,10 @@ ul li {
 ul li a {
     color: #d9d9d9;
     text-decoration: none;
+}
+
+.image_arrow.is-active {
+    transform: rotate(180deg);
 }
 
 ul li a:hover {
