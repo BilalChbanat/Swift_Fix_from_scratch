@@ -100,10 +100,15 @@
             </div>
             <div class="contact-in">
                 <h2>Send a Message</h2>
-                <form action="#">
-                    <input type="text" id="name" placeholder="Full Name" class="contact-in-input">
+                <form action="#" id="form">
+                    <input type="text" id="username" placeholder="Full Name" class="contact-in-input">
                     <input type="email" id="email" placeholder="E-mail" class="contact-in-input">
-                    <input type="text" id="subject" placeholder="Subject" class="contact-in-input">
+                    <select name="select" id="select">
+                        <option class="option_S" value="nonee">--------- Select ---------</option>
+                        <option class="option" value="maintenance">Maintenance</option>
+                        <option class="option" value="electrical">Electrical</option>
+                        <option class="option" value="plumber">plumber</option>
+                    </select>
                     <textarea placeholder="Message" id="message" class="contact-in-textarea"></textarea>
                     <input type="submit" value="SUBMIT" class="contact-in-btn">
                 </form>
@@ -172,7 +177,7 @@
 
     </div>
 
-
+    <script src="javaScript/script.js"></script>
 </body>
 
 </html>
