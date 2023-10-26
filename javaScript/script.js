@@ -17,5 +17,7 @@ function drop_down() {
 }
 
 search_button.addEventListener('click', () => {
-    input.classList.toggle("is-active")
+    input.classList.toggle('is-active');
 })
+
+

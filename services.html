@@ -119,61 +119,138 @@
             <div class="heading_container">
                 <h2> Our Services </h2>
             </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="box ">
-                        <div class="img-box">
-                            <img src="images/s1.png" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Maintenance
-                            </h5>
-                            <p>
-                                when looking at its layout. The point of using Lorem Ipsum is
-                                that it has a more-or-less normal
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="box ">
-                        <div class="img-box">
-                            <img src="images/s2.png" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Electrical
-                            </h5>
-                            <p>
-                                when looking at its layout. The point of using Lorem Ipsum is
-                                that it has a more-or-less normal
-                            </p>
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <input type="radio" name="radio-btn" id="radio6">
+                    <div class="slide first">
+                        <div class="box ">
+                            <div class="img-box">
+                                <img src="images/s1.png" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Maintenance
+                                </h5>
+                                <p>
+                                    when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has a more-or-less normal
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="box ">
-                        <div class="img-box">
-                            <img src="images/s3.png" alt="">
+                    <div class="slide">
+                        <div class="box ">
+                            <div class="img-box">
+                                <img src="images/s2.png" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Electrical
+                                </h5>
+                                <p>
+                                    when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has a more-or-less normal
+                                </p>
+                            </div>
                         </div>
-                        <div class="detail-box">
-                            <h5>
-                                Plumbing
-                            </h5>
-                            <p>
-                                when looking at its layout. The point of using Lorem Ipsum is
-                                that it has a more-or-less normal
-                            </p>
+                    </div>
+                    <div class="slide">
+                        <div class="box ">
+                            <div class="img-box">
+                                <img src="images/s3.png" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Plumbing
+                                </h5>
+                                <p>
+                                    when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has a more-or-less normal
+                                </p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="slide">
+                        <div class="box ">
+                            <div class="img-box">
+                                <img src="images/s1.png" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Maintenance
+                                </h5>
+                                <p>
+                                    when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has a more-or-less normal
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="box ">
+                            <div class="img-box">
+                                <img src="images/s2.png" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Electrical
+                                </h5>
+                                <p>
+                                    when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has a more-or-less normal
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="box ">
+                            <div class="img-box">
+                                <img src="images/s3.png" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Plumbing
+                                </h5>
+                                <p>
+                                    when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has a more-or-less normal
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                        <label for="radio6" class="manual-btn"></label>
                     </div>
                 </div>
             </div>
             <div class="btn-box">
-                <a href="#">
+                <a id="btn-box">
                     View More
                 </a>
             </div>
+
+        </div>
+        <div class="popup">
+            <div class="i">
+                <i id="x" class="fa-solid fa-xmark" style="padding: 1rem; cursor: pointer;"></i>
+            </div>
+            <span>currently there is no more services</span>
         </div>
     </section>
 
@@ -229,7 +306,7 @@
 
     </div>
 
-
+    <script src="javaScript/service.js"></script>
 </body>
 
 </html>
