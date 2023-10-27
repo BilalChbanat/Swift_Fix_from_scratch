@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Services | SwiftFix Services Inc.</title>
@@ -24,7 +25,7 @@
     <header>
         <div class="logo_and_SwiftFix">
             <a href="index.html" class="prologo"><img src="images/logo.webp" alt="logo"></a>
-            <a href="index.html">Swift Fix</a>
+            <a href="index.html">SwiftFix</a>
         </div>
 
         <nav class="navigation">
@@ -34,15 +35,20 @@
                     <a href="contact.html">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="logo">Testimonials</a>
+                    <a id="drop_down_menu" onclick="drop_down()">Services <img class="image_arrow"
+                            src="images/arrow_down.webp" alt="menu"></a>
+                    <ul class="ul-drop-down-items">
+                        <li class="tringle_clips"></li>
+                        <li class="drop-down-item"><a href="#">maintenance</a></li>
+                        <li class="drop-down-item"><a href="#">plumber</a></li>
+                        <li class="drop-down-item"><a href="#">electrical</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="about.html" class="logo">About</a>
-
                 </li>
                 <li class="nav-item">
-                    <a href="services.html">Services</a>
-
+                    <a href="#" class="logo">Testimonials</a>
                 </li>
                 <li class="nav-item">
                     <button class="search-button">
@@ -50,13 +56,45 @@
                     </button>
                 </li>
             </ul>
-
-
-
-
+            <button class="hamburger_icon" onclick="hamburger()">
+                <div class="bar">.</div>
+            </button>
         </nav>
-    </header>
 
+    </header>
+    <div class="mobile_navigation">
+        <ul class="mobile_nav-items">
+
+            <li class="mobile_nav-item">
+                <a href="contact.html">Contact Us</a>
+            </li>
+            <li class="mobile_nav-item">
+                <a href="#" class="logo">Testimonials</a>
+            </li>
+            <li class="mobile_nav-item">
+                <a href="about.html" class="logo">About</a>
+
+            </li>
+            <li class="mobile_nav-item">
+                <a href="services.html">Services</a>
+
+            </li>
+            <li class="nav-item">
+                <button class="search-button-mobile" style="background-color: #ffffff; margin-left: 0;">
+                    <i class="fas fa-sharp fa-regular fa-magnifying-glass">.</i>
+                </button>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Write what are you loking for?">
+        <div class="i">
+            <i id="x" class="fa-solid fa-xmark"
+                style="padding: 1.2rem; cursor: pointer;color: #ffffff;font-size: 1rem;"></i>
+        </div>
+    </div>
     <div class="serv_pic">
         <img src="images/services.webp" alt="services">
     </div>
@@ -127,7 +165,7 @@
                     <input type="radio" name="radio-btn" id="radio4">
                     <input type="radio" name="radio-btn" id="radio5">
                     <input type="radio" name="radio-btn" id="radio6">
-                    <div class="slide first">
+                    <div class="slide first" class="animate__animated animate__backInRight">
                         <div class="box ">
                             <div class="img-box">
                                 <img src="images/s1.png" alt="">
@@ -143,7 +181,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="slide" class="animate__animated animate__backInRight">
                         <div class="box ">
                             <div class="img-box">
                                 <img src="images/s2.png" alt="">
@@ -159,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="slide" class="animate__animated animate__backInRight">
                         <div class="box ">
                             <div class="img-box">
                                 <img src="images/s3.png" alt="">
@@ -175,7 +213,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="slide" class="animate__animated animate__backInRight">
                         <div class="box ">
                             <div class="img-box">
                                 <img src="images/s1.png" alt="">
@@ -191,7 +229,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="slide" class="animate__animated animate__backInRight">
                         <div class="box ">
                             <div class="img-box">
                                 <img src="images/s2.png" alt="">
@@ -207,7 +245,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="slide" class="animate__animated animate__backInRight">
                         <div class="box ">
                             <div class="img-box">
                                 <img src="images/s3.png" alt="">
@@ -228,6 +266,8 @@
                         <div class="auto-btn2"></div>
                         <div class="auto-btn3"></div>
                         <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                        <div class="auto-btn6"></div>
                     </div>
                     <div class="navigation-manual">
                         <label for="radio1" class="manual-btn"></label>
@@ -307,6 +347,8 @@
     </div>
 
     <script src="javaScript/service.js"></script>
+    <script src="javaScript/script.js"></script>
+
 </body>
 
 </html>

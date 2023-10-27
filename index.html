@@ -38,9 +38,9 @@
                             src="images/arrow_down.webp" alt="menu"></a>
                     <ul class="ul-drop-down-items">
                         <li class="tringle_clips"></li>
-                        <li class="drop-down-item">maintenance</li>
-                        <li class="drop-down-item">plumber</li>
-                        <li class="drop-down-item">electrical</li>
+                        <li class="drop-down-item"><a href="services.html">maintenance</a></li>
+                        <li class="drop-down-item"><a href="services.html">plumber</a></li>
+                        <li class="drop-down-item"><a href="services.html">electrical</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -79,15 +79,20 @@
 
             </li>
             <li class="nav-item">
-                <button class="search-button" style="background-color: #ffffff; margin-left: 0;">
+                <button class="search-button-mobile" style="background-color: #ffffff; margin-left: 0;">
                     <i class="fas fa-sharp fa-regular fa-magnifying-glass">.</i>
                 </button>
             </li>
 
         </ul>
+
     </div>
     <div class="search-bar">
         <input type="text" placeholder="Write what are you loking for?">
+        <div class="i">
+            <i id="x" class="fa-solid fa-xmark"
+                style="padding: 1.2rem; cursor: pointer;color: #ffffff;font-size: 1rem;"></i>
+        </div>
     </div>
 
     <section class="main_home">
@@ -138,10 +143,9 @@
                     <h2>Equipment Maintenance</h2>
                     <p>Our equipment maintenance team ensures that your machinery operates at peak efficiency</p>
                 </div>
-
             </div>
-            <div class="consulting_cards">
 
+            <div class="consulting_cards">
                 <div class="cards">
                     <div class="icon">
                         <img src="svg/roket.svg" alt="roket">
@@ -158,7 +162,6 @@
                 </div>
             </div>
         </div>
-
     </section>
     <section class="some_count">
         <div class="titles">
@@ -187,7 +190,7 @@
     <section class="clients_testimonial">
         <h2 class="client_title">Clients Testimonial</h2>
         <div class="clients_cards">
-            <div class="card1">
+            <div class="card1" class="animate__animated animate__backInLeft">
                 <div class="client_text">
                     <h3>Incredible Experience</h3>
                     <p>
@@ -207,7 +210,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card1">
+            <div class="card1" class="animate__animated animate__backInRight">
                 <div class="client_text">
                     <h3>Dependable, Responsive, Professional Partner</h3>
                     <p>
@@ -288,8 +291,6 @@
         </div>
 
     </div>
-
-
     <script src="javaScript/script.js"></script>
 </body>
 

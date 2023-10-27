@@ -129,6 +129,23 @@ h1 h2 {
     background: #cecece2b;
 }
 
+.search-button-mobile {
+    margin-left: 1em;
+    border-radius: 50%;
+    border: none;
+    height: 3.4em;
+    width: 3.4em;
+    outline: none;
+    background: #ffffff2b;
+    color: #094B72;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.search-button-mobile:hover {
+    background: #cecece2b;
+}
+
 .main-container {
     display: flex;
     justify-content: space-between;
@@ -937,16 +954,16 @@ ul li a:hover {
     top: 0;
     left: 100%;
     width: 100%;
-    z-index: 100;
+    z-index: 102;
     min-height: 100vh;
     background-color: #094b72c8;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.search-bar .is-active {
+.search-bar.is-active {
     left: 0%;
 }
 
@@ -965,6 +982,15 @@ ul li a:hover {
     font-family: 'Poppins', sans-serif;
 }
 
+.drop-down-item a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+.drop-down-item a:hover {
+    color: #094B72;
+}
 
 .option {
     color: #000000;
@@ -1072,7 +1098,7 @@ ul li a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     width: 26em;
-    margin: 1em 4em;
+    margin: 1em 2em;
     height: 18em;
     background-color: #ffffff;
     border: none;
@@ -1193,6 +1219,7 @@ ul li a:hover {
 #radio6:checked~.navigation-auto .auto-btn6 {
     background-color: #094B72;
 }
+
 
 @media screen and (max-width:480px) {
     .contact-in:nth-child(1) {
@@ -1938,6 +1965,10 @@ ul li a:hover {
 
 
 @media (min-width: 991px) {
+    header {
+        padding: 10px 140px;
+    }
+
     .client_text h3 {
         font-size: 28px;
     }

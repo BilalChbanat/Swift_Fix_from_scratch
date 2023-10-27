@@ -5,12 +5,10 @@ var counter = 1;
 setInterval(function () {
     document.getElementById('radio' + counter).checked = true;
     counter++;
-    if (counter > 4) {
+    if (counter > 6) {
         counter = 1;
     }
-}, 4000);
-
-
+}, 2500);
 
 btn.addEventListener('click', () => {
     popup.classList.toggle('is-active');
