@@ -228,7 +228,7 @@ h1 h2 {
 
 .container-sou-image img {
     width: 128px;
-    height: auto;
+    height: 44px;
     margin: 0.5em;
 }
 
@@ -344,8 +344,8 @@ h1 h2 {
 }
 
 .icon img {
-    width: auto;
-    height: auto;
+    width: 35px;
+    height: 35px;
 }
 
 .some_count {
