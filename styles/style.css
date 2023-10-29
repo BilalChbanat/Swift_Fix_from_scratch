@@ -348,6 +348,11 @@ h1 h2 {
     height: 35px;
 }
 
+.f-sub img {
+    width: 24px;
+    height: 24px;
+}
+
 .some_count {
     display: flex;
     flex-direction: column;
